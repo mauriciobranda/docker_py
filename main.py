@@ -21,13 +21,19 @@ def main():
     def get_year(movie_tag):
         moviesplit = movie_tag.text.split()
         year = moviesplit[-1] # last item 
+        print(str(year))
+
+
+
+        
         return year
 
     years = [get_year(tag) for tag in movietags]
+    
     actors_list =[tag['title'] for tag in inner_movietags] # access attribute 'title'
     titles = [tag.text for tag in inner_movietags]
     ratings = [float(tag['data-value']) for tag in ratingtags] # access attribute 'data-value'
-
+    print("Here I am 2")
     n_movies = len(titles)
 
     while(True):

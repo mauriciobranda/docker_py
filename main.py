@@ -2,7 +2,7 @@ import random
 import requests
 from bs4 import BeautifulSoup
 
-# get IMDB Top 250 and randomly select a movie
+# PEGANDO TUDO IMDB Top 250 and randomly select a movie
 
 URL = 'http://www.imdb.com/chart/top'
 

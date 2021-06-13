@@ -43,7 +43,7 @@ def main():
         if int(years[idx]) > 2010:
             print(f'{titles[idx]} {years[idx]}, Rating: {ratings[idx]:.1f}, Starring: {actors_list[idx]}')
 
-            user_input = input('Outra dica de filme ? (y/[n])? ')
+            user_input = input('vai querer outra ? (y/[n])? ')
             if user_input != 'y':
                 break
     

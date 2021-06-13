@@ -40,7 +40,7 @@ def main():
     while(True):
         idx = random.randrange(0, n_movies)
         
-        if int(years[idx]) > 2000:
+        if int(years[idx]) > 2010:
             print(f'{titles[idx]} {years[idx]}, Rating: {ratings[idx]:.1f}, Starring: {actors_list[idx]}')
 
             user_input = input('Do you want another movie (y/[n])? ')
